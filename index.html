@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Panamá</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f8ff;
+        }
+        header { 
+            background-color: #0038a8; 
+            color: white; 
+            padding: 1em; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+            align-items: center;
+            object-fit: contain;
+        }
+        nav ul { 
+            list-style-type: none; 
+            padding: 0; 
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li { 
+            margin: 0 1em; 
+        }
+        nav ul li a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        main { 
+            padding: 2em; 
+            max-width: 1200px; 
+            margin: 0 auto;
+        }
+        .hero {
+            background-image: url('/proyecto 1/proyecto 1/fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .hero h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2em;
+        }
+        .destination-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .destination-card h3 {
+            padding: 1em;
+            margin: 0;
+            background-color: #0038a8;
+            color: white;
+        }
+        footer { 
+            background-color: #0038a8; 
+            color: white; 
+            text-align: center; 
+            padding: 1em; 
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Turismo en Panamá</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="planifica.html">Planifica tu viaje</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="/Proyecto 1/Proyecto 1/DALL·E 2024-09-18 16.46.40 - A logo for a tourism website agency that showcases travel destinations in Panama, designed with the colors of Panama's flag_ blue, red, and white. The.webp">
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <h2>Descubre la Magia de Panamá</h2>
+        </div>
+        <p>Bienvenido al corazón de Centroamérica. Panamá te ofrece una experiencia única que combina historia, modernidad y belleza natural.</p>
+        <h3>Destinos populares</h3>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="/Proyecto 1/Proyecto 1/canal.jpg" alt="Canal de Panamá">
+                <h3>Canal de Panamá</h3>
+            </div>
+            <div class="destination-card">
+                <img src="/Proyecto 1/Proyecto 1/bocas.jpg" alt="Bocas del Toro">
+                <h3>Bocas del Toro</h3>
+            </div>
+            <div class="destination-card">
+                <img src="/Proyecto 1/Proyecto 1/casco.jpg" alt="Casco Viejo">
+                <h3>Casco Viejo</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer>
+            <p>© 2024 Turismo en Panamá</p>
+            <a href="https://www.visitpanama.com/" style="color: white; margin-right: 10px;">Visit Panama</a>
+            <a href="https://www.atp.gob.pa/" style="color: white;">Autoridad de Turismo de Panamá</a>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin-right: 10px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin-right: 10px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
